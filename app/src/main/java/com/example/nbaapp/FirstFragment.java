@@ -75,7 +75,7 @@ public class FirstFragment extends Fragment {
 
     void refresh() {
 
-        Toast.makeText(getContext(),"Refrescando",Toast.LENGTH_LONG).show();
+        Toast.makeText(getContext(),"Cargando",Toast.LENGTH_LONG).show();
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getActivity().getApplicationContext());
         String tipo = preferences.getString("tipo","");
         if(!tipo.equals("")){
